@@ -1,0 +1,88 @@
+.container {
+  min-height: calc(100vh - 5rem); /* Subtract the top padding from layout */
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.5rem 0; /* Add top padding to account for fixed header */
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* Add position relative for absolute footer */
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.number {
+  font-family: var(--font-space-mono);
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: var(--accent);
+  font-family: var(--font-space-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.bigTitle {
+  color: var(--text-bright);
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--text);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1.25rem 1.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.25rem;
+  font-family: var(--font-space-mono);
+  font-size: 0.875rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text);
+  font-family: var(--font-space-mono);
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .bigTitle {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+} 
