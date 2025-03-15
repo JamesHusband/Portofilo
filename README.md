@@ -49,13 +49,6 @@ A modern, responsive portfolio website built with Next.js 14 and TypeScript, sho
 - **Projects**: Showcase of featured projects
 - **Contact**: Get in touch section with social links
 
-## 🎨 Customization
-
-1. Update `globals.css` to modify the color scheme and typography
-2. Edit component content in the respective files under `components/`
-3. Replace images in the `public/` directory
-4. Update metadata in `layout.tsx`
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
