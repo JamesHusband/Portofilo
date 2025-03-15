@@ -40,7 +40,7 @@ export default function About() {
         <div className={styles.imageWrapper}>
           <div className={styles.imageContainer}>
             <Image
-              src="/me.jpg"
+              src="/me.webp"
               alt="James Charles"
               width={300}
               height={300}

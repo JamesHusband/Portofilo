@@ -93,25 +93,11 @@
 .imageContainer {
   position: relative;
   border-radius: 0.25rem;
-  background-color: var(--accent);
-  transition: all 150ms;
-}
-
-.imageContainer:hover {
-  background-color: transparent;
-}
-
-.imageContainer:hover .image {
-  filter: none;
-  mix-blend-mode: normal;
 }
 
 .image {
   position: relative;
   border-radius: 0.25rem;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
-  transition: all 150ms;
 }
 
 .imageBorder {
@@ -123,7 +109,6 @@
   border: 2px solid var(--accent);
   border-radius: 0.25rem;
   z-index: -1;
-  transition: all 150ms;
 }
 
 @media (max-width: 768px) {
