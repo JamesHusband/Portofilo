@@ -1,0 +1,170 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  white-space: nowrap;
+}
+
+.number {
+  font-family: var(--font-space-mono);
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-bright);
+  font-weight: 600;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--text);
+  opacity: 0.3;
+  margin-left: 0.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.project {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.projectContent {
+  position: relative;
+  grid-area: 1 / 1 / -1 / 7;
+  z-index: 2;
+  text-align: left;
+}
+
+.project.reverse .projectContent {
+  grid-area: 1 / 7 / -1 / -1;
+  text-align: right;
+}
+
+.featured {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-space-mono);
+  font-size: 0.875rem;
+  display: none;
+}
+
+.project:first-child .featured {
+  display: block;
+}
+
+.projectTitle {
+  margin: 0.625rem 0 1.25rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.projectTitle a {
+  color: var(--text-bright);
+  text-decoration: none;
+}
+
+.projectDescription {
+  position: relative;
+  padding: 1.5rem;
+  background-color: rgba(2, 12, 27, 0.7);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 0.25rem;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.project.reverse .techList {
+  justify-content: flex-end;
+}
+
+.projectLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.project.reverse .projectLinks {
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--text);
+}
+
+.projectImage {
+  position: relative;
+  grid-area: 1 / 6 / -1 / -1;
+  z-index: 1;
+}
+
+.project.reverse .projectImage {
+  grid-area: 1 / 1 / -1 / 8;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .projectContent,
+  .project.reverse .projectContent {
+    grid-area: 1 / 1 / 2 / -1;
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  .projectImage,
+  .project.reverse .projectImage {
+    grid-area: 2 / 1 / -1 / -1;
+  }
+
+  .projectDescription {
+    padding: 1.25rem;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .techList,
+  .project.reverse .techList,
+  .projectLinks,
+  .project.reverse .projectLinks {
+    justify-content: flex-start;
+  }
+} 
