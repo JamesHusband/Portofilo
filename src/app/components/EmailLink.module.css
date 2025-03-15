@@ -1,0 +1,35 @@
+.emailContainer {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.email {
+  font-family: var(--font-space-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  transition: color 150ms;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.email:hover {
+  color: var(--accent);
+}
+
+.divider {
+  width: 1px;
+  height: 6rem;
+  background-color: var(--text);
+}
+
+@media (min-width: 1024px) {
+  .emailContainer {
+    display: flex;
+  }
+} 
