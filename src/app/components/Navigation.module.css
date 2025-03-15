@@ -64,4 +64,8 @@
 
 .resumeButton:hover {
   background-color: rgba(100, 255, 218, 0.1);
+}
+
+.active {
+  color: var(--color-primary);
 } 
