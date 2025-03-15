@@ -1,10 +1,10 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Work from "./components/Work";
-import Projects from "./components/Projects";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Work from "./pages/Work";
+import Projects from "./pages/Projects";
 import SocialLinks from "./components/SocialLinks";
 import EmailLink from "./components/EmailLink";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 import styles from "./page.module.css";
 
 export default function Home() {
