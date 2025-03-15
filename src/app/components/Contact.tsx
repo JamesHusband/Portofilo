@@ -10,8 +10,8 @@ export default function Contact() {
         <h2 className={styles.title}>What&apos;s Next?</h2>
         <h3 className={styles.bigTitle}>Get In Touch</h3>
         <p className={styles.description}>
-          My inbox is always open. Whether you have a question or just want to
-          say hi, I&apos;ll try my best to get back to you!
+          I&apos;m currently looking for new opportunities. Interest in hybrid /
+          remote positions
         </p>
         <a
           href="mailto:hello@jameshdev.com"
@@ -24,10 +24,6 @@ export default function Contact() {
       </div>
       <footer className={styles.footer}>
         <div>Designed & Built by James Charles</div>
-        <div className={styles.stats}>
-          <span>⭐ 7,777</span>
-          <span>🍴 3,914</span>
-        </div>
       </footer>
     </section>
   );

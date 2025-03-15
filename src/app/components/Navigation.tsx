@@ -24,7 +24,6 @@ export default function Navigation() {
             <span className={styles.number}>04.</span>Contact
           </Link>
           <Link
-            style={{ textDecoration: "line-through" }}
             href="/resume.pdf"
             className={styles.resumeButton}
             target="_blank"

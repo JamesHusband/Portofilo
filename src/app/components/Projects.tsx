@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "Fantakuchen",
     description: "A website for showcasing my open source games",
     image: "/fantakuchen.webp",
-    tech: ["Javascript"],
+    tech: ["Svelte", "Tailwind"],
     links: {
       github: "https://github.com/fantakuchen/fantakuchen",
       external: "#",
@@ -30,7 +30,7 @@ const projects: Project[] = [
     description:
       "A CRM microservice application for managing affiliate marketing campaigns.",
     image: "/houston.webp",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Docker"],
+    tech: ["React", "NX", "Express", "MongoDB", "Google API"],
     links: {
       github: "#",
       external: "#",

@@ -31,7 +31,7 @@ export default function About() {
             <li>JavaScript (ES6+)</li>
             <li>TypeScript</li>
             <li>React</li>
-            <li>Node.js</li>
+            <li>PHP</li>
             <li>Python</li>
             <li>WordPress</li>
           </ul>
